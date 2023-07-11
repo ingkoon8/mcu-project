@@ -1,4 +1,4 @@
-import datetime
+
 import cv2
 from ultralytics import YOLO
 
@@ -29,7 +29,7 @@ while True:
             continue
 
         xmin, ymin, xmax, ymax = int(data[0]), int(data[1]), int(data[2]), int(data[3])
-        label = int(data[5])
+        
         cv2.rectangle(frame, (xmin, ymin), (xmax, ymax), GREEN, 2)
         cv2.putText(frame, 'Person'+' '+str(round(confidence, 2)) + '%', (xmin, ymin), cv2.FONT_ITALIC, 1, WHITE, 2)
         print(xmin, ymin, xmax, ymax)
