@@ -1,4 +1,4 @@
-mport matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import cv2
 import numpy as np
 from IPython.display import display, Image
