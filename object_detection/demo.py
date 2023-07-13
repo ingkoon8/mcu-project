@@ -36,7 +36,7 @@ while True:
         if len(saveratio) > 15:
             saveratio.remove(saveratio[0])
         if (a/b) >= 1:
-            if((sum(saveratio)/len(saveratio))>1):
+            if((sum(saveratio)/len(saveratio))>=1):
                 cv2.rectangle(frame, (xmin, ymin), (xmax, ymax), RED, 2)
                 cv2.putText(frame, 'FALL DETECT', (xmin, ymin), cv2.FONT_ITALIC, 1, WHITE, 2)
                 print('FALL DETECT')
